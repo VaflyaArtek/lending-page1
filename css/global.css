@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --loader-background: #000;
+    --loader-background-circle: #fff;
+    --background: #290003;
+    --main-color: #fad0d0;
+    --title-color: #d68f8f;
+}
+img{
+    max-width: 100%;
+    display: block;
+
+}
+.container{
+    max-width: 1020px;
+    margin: auto;
+    width: 100%;
+    
+}
+
+body{
+    background-color: var(--background);
+    font-family: 'Open Sans', sans-serif;
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--title-color);
+}
+
+a{
+    text-decoration: none;
+    transition: .4s;
+}

@@ -1,0 +1,13 @@
+.header__wrap-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.header__img{
+    height: 400px;
+    margin-bottom: 40px;
+}
+
