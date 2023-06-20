@@ -1,29 +1,15 @@
 .about__title {
     margin-bottom: 13px;
-    font-size: 24px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
 }
 
 .about__text {
     margin-bottom: 20px;
-}
-
-.buy {
-    border: 1px solid black;
-    border-radius: 10px;
-    transition: .4s;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    margin-bottom: 30px;
 }
-
-.buy:hover {
-    border-radius: 15px;
-}
-
-
 
 .roadmap-wrapper {
     display: flex;
@@ -33,26 +19,33 @@
 }
 
 .card {
-    width: 100%;
+    max-width: 100%;
     max-width: 320px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.roadmap__line {
-    width: 100%;
+.img-in-p {
+    max-width: 15vh;
+    margin: auto;
+}
+
+/* .roadmap__line {
+    width: 20rem;
     height: 2px;
     background: #000;
     margin-bottom: 20px;
-}
+    
+} */
 
 .roadmap__img {
     width: 100px;
     height: 100px;
+    margin-bottom: 15px;
 }
 
 .roadmap__img img {
@@ -66,7 +59,6 @@
     text-align: center;
 }
 
-/* Стилі для планшетів і десктопів */
 @media (min-width: 768px) {
     .roadmap-wrapper {
         flex-direction: row;
@@ -77,17 +69,134 @@
     .card {
         max-width: 220px;
     }
-    .roadmap__line{
+
+    .roadmap__line {
         display: none;
     }
 }
 
-.main-btn{
+.main-btn {
     font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
-.join{
+.buy-btn {
     display: grid;
     place-items: center;
-    margin: 40px 0;
+    font-family: "Balsamiq Sans", cursive;
+    color: var(--clr-neon);
+    /* padding-right: 10rem; */
+    width: 100%;
+    /* Необхідно для коректного центрування */
+    text-align: center;
+    /* Центрує текст всередині */
+}
+
+.neon-button {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--clr-neon);
+    border: var(--clr-neon) 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+    max-width: 100%;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+
+    position: relative;
+}
+
+.neon-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    opacity: 0;
+    background-color: var(--clr-neon);
+    z-index: -1;
+    transition: opacity 100ms linear;
+}
+
+.neon-button:hover,
+.neon-button:focus {
+    color: var(--clr-bg);
+    text-shadow: none;
+}
+
+.neon-button:hover::before,
+.neon-button:focus::before {
+    opacity: 1;
+}
+
+.neon-button:hover::after,
+.neon-button:focus::after {
+    opacity: 1;
+}
+
+@media (max-width: 778px) {
+    .neon-button {
+        font-size: 1.5rem;
+    }
+}
+
+
+.roadmap2__wrapper {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+
+.roadmap2__card {
+    flex: 0 1 calc(33.333% - 1em);
+    margin: 0.5em;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 15px 5px;
+    border: 1px solid #fff;
+    font-size: 20px;
+}
+
+.roadmap2__title {
+    text-align: center;
+}
+
+.roadmap2__subtitle {
+    text-align: center;
+}
+
+.roadmap2__card:hover{
+    background-color: rgba(240, 14, 14, 0.5);
+
+}
+
+@media (max-width: 800px) {
+    .roadmap2__card {
+        flex: 0 1 calc(50% - 1em);
+    }
+}
+
+@media (max-width: 500px) {
+    .roadmap2__card {
+        flex: 0 1 100%;
+    }
+    .roadmap2__wrapper{
+        left: 50%;
+        right: 50%;
+    }
+}
+
+@media (max-width: 1572px) {
+    .roadmap2__wrapper {
+        flex-wrap: wrap;
+    }
 }
