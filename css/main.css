@@ -152,12 +152,12 @@
 
 .roadmap2__wrapper {
     display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .roadmap2__card {
-    flex: 0 1 calc(33.333% - 1em);
+    flex-basis: 300px;
     margin: 0.5em;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
@@ -174,29 +174,19 @@
     text-align: center;
 }
 
-.roadmap2__card:hover{
+.roadmap2__card:hover {
     background-color: rgba(240, 14, 14, 0.5);
-
 }
 
-@media (max-width: 800px) {
+@media (max-width: 670px) {
     .roadmap2__card {
-        flex: 0 1 calc(50% - 1em);
+        flex-basis: 80%;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 560px) {
     .roadmap2__card {
-        flex: 0 1 100%;
-    }
-    .roadmap2__wrapper{
-        left: 50%;
-        right: 50%;
+        flex-basis: 100%;
     }
 }
 
-@media (max-width: 1572px) {
-    .roadmap2__wrapper {
-        flex-wrap: wrap;
-    }
-}
