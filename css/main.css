@@ -2,10 +2,37 @@
     max-width: 300px;
     position: fixed;
     top: 60%;
+    z-index: -1;
 }
 
 .second-aligator {
     left: 81%;
+}
+
+@media (max-width: 1538px) {
+    .aligator {
+        max-width: 200px;
+    }
+
+    .second-aligator {
+        left: 84vw;
+    }
+}
+
+@media (max-width: 850px) {
+    .aligator {
+        max-width: 150px;
+    }
+
+    .second-aligator {
+        left: 80%;
+    }
+}
+
+@media (max-width: 650px) {
+    .aligator {
+        display: none;
+    }
 }
 
 .about__title {
@@ -193,12 +220,6 @@
 .img-in-p {
     min-height: 200px;
     min-width: 200px;
-}
-
-@media (max-width: 1538px) {
-    .aligator__wrapper {
-        display: none;
-    }
 }
 
 .roadmap__contract {
