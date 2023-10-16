@@ -1,14 +1,26 @@
+.aligator {
+    max-width: 300px;
+    position: fixed;
+    top: 60%;
+}
+
+.second-aligator {
+    left: 81%;
+}
+
 .about__title {
     margin-bottom: 13px;
-    font-size: 30px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
-    letter-spacing: 2px;
+    text-align: center;
 }
 
 .about__text {
     margin-bottom: 20px;
+    font-size: 1rem;
     text-align: center;
+    line-height: 30px;
 }
 
 .roadmap-wrapper {
@@ -16,6 +28,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    margin-bottom: 40px;
 }
 
 .card {
@@ -24,7 +37,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -33,14 +45,6 @@
     max-width: 15vh;
     margin: auto;
 }
-
-/* .roadmap__line {
-    width: 20rem;
-    height: 2px;
-    background: #000;
-    margin-bottom: 20px;
-    
-} */
 
 .roadmap__img {
     width: 100px;
@@ -52,7 +56,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* border-radius: 50%; */
 }
 
 .roadmap__text {
@@ -76,10 +79,11 @@
 }
 
 .main-btn {
-    font-size: 30px;
+    font-size: 1.2rem;
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin: 40px 0;
+    align-items: center;
 }
 
 .buy-btn {
@@ -87,11 +91,8 @@
     place-items: center;
     font-family: "Balsamiq Sans", cursive;
     color: var(--clr-neon);
-    /* padding-right: 10rem; */
     width: 100%;
-    /* Необхідно для коректного центрування */
     text-align: center;
-    /* Центрує текст всередині */
 }
 
 .neon-button {
@@ -107,9 +108,7 @@
     border-radius: 0.25em;
     max-width: 100%;
     text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
-
     box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
-
     position: relative;
 }
 
@@ -157,13 +156,14 @@
 }
 
 .roadmap2__card {
-    flex-basis: 300px;
+    flex-basis: 600px;
     margin: 0.5em;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 15px 5px;
     border: 1px solid #fff;
-    font-size: 20px;
+    font-size: 1rem;
+    transition: .4s;
 }
 
 .roadmap2__title {
@@ -175,7 +175,7 @@
 }
 
 .roadmap2__card:hover {
-    background-color: rgba(240, 14, 14, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 @media (max-width: 670px) {
@@ -190,3 +190,18 @@
     }
 }
 
+.img-in-p {
+    min-height: 200px;
+    min-width: 200px;
+}
+
+@media (max-width: 1538px) {
+    .aligator__wrapper {
+        display: none;
+    }
+}
+
+.roadmap__contract {
+    font-size: 10px;
+    max-width: 200px;
+}

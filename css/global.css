@@ -7,18 +7,17 @@
 
 :root {
     --loader-background: #000;
-    --loader-background-circle: rgba(250, 12, 12, 0.7);
-    --background: #cc1d1d;
-    --main-color: #fad0d0;
-    --title-color: #d68f8f;
-    --clr-neon: hsl(0, 100%, 54%);
+    --loader-background-circle: rgba(69, 189, 32, 0.7);
+    --background: url(../img/background.jpg);
+    --main-color: #92ad2e;
+    --title-color: #86b142;
+    --clr-neon: hsl(81, 64%, 41%);
     --clr-bg: hsl(323 21% 16%);
 }
 
 img {
     max-width: 100%;
     display: block;
-
 }
 
 .container {
@@ -28,15 +27,15 @@ img {
 }
 
 body {
-    /* background-color: var(--background); */
-    background-image: url(../img/background.png);
-    background-size: 20%;
-    background-repeat: repeat;
+    background-image: url(../img/background.jpg);;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    font-family: 'Kablammo', cursive;
     color: var(--main-color);
-    font-size: 25px;
+    font-size: 20px;
+    line-height: 250%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 h1,
@@ -66,14 +65,3 @@ ul li{
     list-style: none;
 }
 
-@media (max-width: 1300px) {
-    body {
-        background-size: 50%;
-    }
-}
-
-@media (max-width: 530px) {
-    body {
-        background-size: 70%;
-    }
-}

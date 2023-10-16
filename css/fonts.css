@@ -1,1 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+@font-face {
+    src: url(../fonts/ComicalCartoon.ttf);
+    font-family: Comical Cartoon;
+}
+
+body{
+    font-family: Comical Cartoon;
+}

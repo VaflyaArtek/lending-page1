@@ -3,7 +3,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../img/background.png);
     overflow: hidden;
 }
 
@@ -21,8 +20,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 600px;
     border-radius: 50%;
 }
 
